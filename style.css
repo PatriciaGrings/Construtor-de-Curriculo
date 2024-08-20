@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+*{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    display: flex;
+}
+.coluna{
+    flex: 1;
+    
+}
+#esquerda{
+    flex: 30%;
+    background-color: rgb(173, 179, 194);
+    color: white;
+    padding-left: 10px;
+    padding-top: 100px;
+
+}
+#direita{
+    flex: 70%;
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+}
+input, textarea{
+    width: 80%;
+}
+#experiencia{
+    width: 90%;
+    height: 180px;
+    border: 1px solid black;
+    padding: 10px;
+    color: #000;
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 6pt;
+}
+#data{
+    font-size: 12pt;
+}
+#empresa{
+    font-size: 12pt;
+}
+#cargo{
+    font-size: 14pt;
+}
+#ativ{
+    font-size: 11pt;
+    position: relative;
+}
+#ativ::before{
+    content: '•';
+    font-size: 18pt;
+    padding-right: 5px;
+    position: absolute;
+    left: 20px;
+    top: 20%;
+
+}
+

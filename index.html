@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculo</title>
+    <link rel="stylesheet" media="all" href="style.css">
+    <link rel="stylesheet" media="print" href="plotstyle.css">
+    <link rel="stylesheet" media="screen" href="screenstyle.css">
 </head>
 <body>
+    <div id="container">
+        <div class="coluna" id="esquerda">
+            <form method="post">
+                <h3>Contato</h3>
+                <h4>Telefone</h4>
+                <p><input type="number" pattern="^\(\d{2}\)\d{4,5}\d{4}$" placeholder="(xx) xxxxx.xxxx" required> </p>
+                <h4>E-mail</h4>
+                <p><input type="email" placeholder="email@servidor.com"> </p>
+                <h4>Linkedin</h4>
+                <p><input type="text" placeholder="www.linedin.com/in/seulinkedin"> </p>
+                <h4>Porfólio</h4>
+                <p><input type="text" placeholder="www.portfolio.com.br"> </p>
+                <div class="no-print">
+                    <p> <input type="radio" name="portfolio" id="ports"> Sim </p>
+                    <p><input type="radio" name="portfolio" id="portn">Não</p>
+                </div>
+                <h3>Idiomas</h3>
+                <textarea name="idiomas" id="idi" cols="30" rows="5" placeholder="Idioma"></textarea>
+                <div  class="no-print">
+                    <p><input type="radio" name="idiomas" id="idis">Sim</p>
+                    <p><input type="radio" name="idiomas" id="idin">Não</p>
+                </div>
+                <h3>Conhecimentos</h3>
+                <textarea name="idiomas" id="idi" cols="30" rows="10" placeholder="Idioma"></textarea>
+                        </div>
+            </form>
+        <div class="coluna" id="direita">
+            <form method="post">
+                <h1><input type="text" placeholder="Nome Sobrenome" required> </h1>
+                <h3><input type="text" placeholder="Cargo"></h3>
+                <h3>Sobre Mim</h3>
+                <p> <textarea name="idiomas" id="idi" cols="30" rows="10" placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente cupiditate voluptates suscipit adipisci dolore, id a, accusamus, repudiandae doloremque sed ratione aliquid fugit labore quia enim nam incidunt aut omnis?"></textarea>
+                    
+                </p>
+                <h3>Perfil Acadêmico</h3>
+                <textarea name="idiomas" id="idi" cols="30" rows="10" placeholder="Instituição <br> Pós-graduação"></textarea>
+                <h3>Experiência</h3>
+                <div contenteditable="true" id="experiencia" class="placeholder">
+                    <p id="data">Data Inicial - Data Final</p>
+                    <p id="empresa">Empresa</p>
+                    <p id="cargo">Cargo</p>
+                    <p id="ativ">Descrição das atividades desempenhadas no cargo</p>  
+                </div>
+            </form>
+        </div>
+    </div>
     
 </body>
 </html>
