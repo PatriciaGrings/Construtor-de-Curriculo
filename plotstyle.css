@@ -5,9 +5,15 @@
         display: none;
     }
 }
-
-textarea, input{
-    background-color: rgb(173, 179, 194);
-    color: white;
+#sobreMim{
+    border: none;
+}
+#esquerda{
+    border: 2px solid rgb(68, 68, 95);
+}
+#direita{
+    border-top: 1px solid rgb(177, 177, 177);
+    border-right: 1px solid rgb(177, 177, 177);
+    border-bottom: 1px solid rgb(177, 177, 177);
 }
 
