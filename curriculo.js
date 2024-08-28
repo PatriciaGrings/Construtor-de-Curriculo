@@ -1,3 +1,41 @@
+var contPort = 0
+var contIdi = 0
+function addPort() {
+    var TPC= document.getElementById('tPortContainer')
+    var TexPC= document.getElementById('textoPortContainer')
+    if (contPort==0) {
+        var novoPortTitulo = document.createElement('div')
+        novoPortTitulo.innerHTML= '<h3>Porfólio</h3>'
+        TPC.appendChild(novoPortTitulo)
+    }
+
+        var novoPortTexto = document.createElement('div')
+        novoPortTexto.setAttribute ('contenteditable', 'true')
+        novoPortTexto.innerHTML= '<p id="textoDados">www.portfolio.com.br</p>'
+
+        TexPC.appendChild(novoPortTexto)
+        
+    contPort += 1
+}
+
+function addIdioma() {
+    var TIC= document.getElementById('tIdiomaContainer')
+    var TexIC= document.getElementById('texIdiomaContainer')
+
+    if (contIdi==0) {
+        var novoIdiomaTitulo = document.createElement('div')
+        novoIdiomaTitulo.innerHTML= '<h3>Idiomas</h3>'
+        TIC.appendChild(novoIdiomaTitulo)
+    }
+    contIdi += 1
+
+    var novoIdiomaTexto= document.createElement('div')
+    novoIdiomaTexto.setAttribute('contenteditable', 'true')
+    novoIdiomaTexto.innerHTML= '<p id="textoDados" class="bulletD">Idioma - Nível de Conhec.</p>'
+    
+    TexIC.appendChild(novoIdiomaTexto)
+}
+
 function perfil (){
     var novoPerfil = document.createElement('div')
     novoPerfil.setAttribute('contenteditable', 'true')
@@ -49,3 +87,4 @@ if (escolhaPortfolio){
 else{
     retirarPortfolio.style.display='none'
 }
+
