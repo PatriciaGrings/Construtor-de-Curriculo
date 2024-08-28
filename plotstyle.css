@@ -16,4 +16,9 @@
     border-right: 1px solid rgb(177, 177, 177);
     border-bottom: 1px solid rgb(177, 177, 177);
 }
+#snPortfolio, #snIdiomas {
+    display: none;
+}
+
+
 

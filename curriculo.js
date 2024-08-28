@@ -21,3 +21,31 @@ function exper(){
     `
     document.getElementById('experienciaContainer').appendChild(novaExperiencia)
 }
+
+function botãoVideo(videoID,fecharID){
+    var video= document.getElementById(videoID)
+    var fechar= document.getElementById(fecharID)
+    
+    video.style.display = 'block'
+    fechar.onclick = function() {
+        video.style.display = 'none'
+    }
+}
+
+var escolhaIdioma = document.getElementById(idis).checked
+var retirarIdioma = document.getElementById(retirarIdioma)
+if (escolhaIdioma){
+    retirarIdioma.style.display='block'
+}
+else{
+    retirarIdioma.style.display='none'
+}
+
+var escolhaPortfolio = document.getElementById(ports).checked
+var retirarIdioma = document.getElementById(retirarPortfolio)
+if (escolhaPortfolio){
+    retirarPortfolio.style.display='block'
+}
+else{
+    retirarPortfolio.style.display='none'
+}

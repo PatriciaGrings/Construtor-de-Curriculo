@@ -24,38 +24,102 @@
                 <div contenteditable="true" id="dados">
                     <p id="textoDados">linkedin.com/in/seulinkedin</p>
                 </div>
-                <h4>Porfólio</h4>
-                <div contenteditable="true" id="dados">
-                    <p id="textoDados">www.portfolio.com.br</p>
+
+                
+                <div id="retirarPortfolio">
+                    <div id="containerPort">
+                        <h4>Porfólio</h4>
+                        <button id="interrog5" class="no-print" onclick="botãoVideo('video5Oculto', 'botãoFechar5')"><img src="Imagens/interrogacao.png" alt=""></button>
+                        <div id="video5Oculto" class="oculto">
+                            <div id="video5Container">
+                                <span id="botãoFechar5">x</span>
+                                    <video controls src="Videos/video teste - Copia - Copia (3).mp4"></video>
+                            </div>
+                        </div>
+                    </div>
+                    <div contenteditable="true" id="dados">
+                        <p id="textoDados">www.portfolio.com.br</p>
+                    </div>
                 </div>
-                <div class="no-print" id="sn">
-                    <p> <input type="radio" name="portfolio" id="ports"> Sim </p>
-                    <p><input type="radio" name="portfolio" id="portn">Não</p>
+                <div id="tPortContainer"></div>
+                <div id="textoPortContainer"></div>
+                <button id="bport" class="no-print" onclick="addPort()">Adicionar Portfólio</button>
+                
+                
+                <div id="retirarIdiomas">
+                    <div id="containerIdiomas">
+                        <h3>Idiomas</h3>
+                        <button id="interrog6" class="no-print" onclick="botãoVideo('video6Oculto', 'botãoFechar6')"><img src="Imagens/interrogacao.png" alt=""></button>
+                        <div id="video6Oculto" class="oculto">
+                            <div id="video6Container">
+                                <span id="botãoFechar6">x</span>
+                                    <video controls src="Videos/video teste - Copia - Copia (4).mp4"></video>
+                            </div>
+                        </div>
+                    </div>
+                    <div contenteditable="true" id="dados2">
+                        <p id="textoDados" class="bulletD">Idioma - Nível de Conhecimento</p>
+                    </div>
                 </div>
-                <h3>Idiomas</h3>
-                <div contenteditable="true" id="dados2">
-                    <p id="textoDados" class="bulletD">Idioma - Nível de Conhecimento</p>
-                </div>
-                <div  class="no-print"  id="sn">
+                <div id="snIdiomas">
                     <p><input type="radio" name="idiomas" id="idis">Sim</p>
                     <p><input type="radio" name="idiomas" id="idin">Não</p>
+                </div>    
+                
+                <div id="containerConhec">
+                    <h3>Conhecimentos</h3>
+                    <button id="interrog7" class="no-print" onclick="botãoVideo('video7Oculto', 'botãoFechar7')"><img src="Imagens/interrogacao.png" alt=""></button>
+                    <div id="video7Oculto" class="oculto">
+                        <div id="video7Container">
+                            <span id="botãoFechar7">x</span>
+                                <video controls src="Videos/video teste - Copia - Copia (5).mp4"></video>
+                        </div>
+                    </div>
                 </div>
-                <h3>Conhecimentos</h3>
                 <div contenteditable="true" id="dados2">
                     <p id="textoDados" class="bulletD">Conhecimento</p>
                 </div>    
         </div>
             
         <div class="coluna" id="direita">
-                <div contenteditable="true" id="t1">
-                    <p>Nome Sobrenome</p>
+                <div id="containerNome">
+                    <div contenteditable="true" id="t1">
+                        <p>Nome Sobrenome</p>
+                    </div>
+                    <button id="interrog" class="no-print" onclick="botãoVideo('videoOculto', 'botãoFechar')"><img src="Imagens/interrogacao.png" alt=""></button>
+                    <div id="videoOculto" class="oculto">
+                        <div id="video1Container">
+                            <span id="botãoFechar">x</span>
+                            <video controls src="Videos/video teste.mp4"></video>
+                        </div>
+                    </div>
                 </div>
                 <div contenteditable="true" id="t3">
                     <p>Cargo</p>
                 </div>
-                <h3>Sobre Mim</h3>
+                <div id="containerSM">
+                    <h3>Sobre Mim</h3>
+                    <button id="interrog2" class="no-print" onclick="botãoVideo('video2Oculto', 'botãoFechar2')"><img src="Imagens/interrogacao.png" alt=""></button>
+                    <div id="video2Oculto" class="oculto">
+                        <div id="video2Container">
+                            <span id="botãoFechar2">x</span>
+                            <video controls src="Videos/video teste - Copia.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+
                 <div contenteditable="true" id="sobreMim"></div>
-                <h3>Perfil Acadêmico</h3>
+                <div id="containerPerfil">
+                    <h3>Perfil Acadêmico</h3>
+                    <button id="interrog3" class="no-print" onclick="botãoVideo('video3Oculto', 'botãoFechar3')"><img src="Imagens/interrogacao.png" alt=""></button>
+                    <div id="video3Oculto" class="oculto">
+                        <div id="video3Container">
+                            <span id="botãoFechar3">x</span>
+                                <video controls src="Videos/video teste - Copia - Copia.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+
                 <div contenteditable="true" id="perfil">
                 <p id="f12" class="topo">Instituição</p>
                 <p id="f11">Data de Início - Data de Conclusão</p>
@@ -63,7 +127,16 @@
                 </div>
                 <div id="perfilContainer"></div>
                 <button id="bperf" class="no-print" onclick="perfil()">Adicionar curso</button>
-                <h3>Experiência</h3>
+                <div id="containerExp">
+                    <h3>Experiência</h3>
+                    <button id="interrog4" class="no-print" onclick="botãoVideo('video4Oculto', 'botãoFechar4')"><img src="Imagens/interrogacao.png" alt=""></button>
+                    <div id="video4Oculto" class="oculto">
+                        <div id="video4Container">
+                            <span id="botãoFechar4">x</span>
+                                <video controls src="Videos/video teste - Copia - Copia (2).mp4"></video>
+                        </div>
+                    </div>
+                </div>
                 
                     <div contenteditable="true" id="experiencia">
                         <p id="f12" class="topo">Data de Entrada - Data de Saída</p>

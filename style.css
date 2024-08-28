@@ -6,8 +6,8 @@ font-family: Arial, Helvetica, sans-serif;
 
 #container{
     display: flex;
-    width: 210mm;
-    height: 297mm;
+    width: 185mm;
+    height: 272mm;
 }
 .coluna{
     flex: 1;
@@ -27,6 +27,46 @@ font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     color: black;
     padding-left: 20px;
+}
+#containerNome, #containerPerfil, #containerSM, #containerExp, #containerPort, #containerIdiomas, #containerConhec{
+    display: flex;
+    align-items: center;
+}
+#interrog, #interrog2, #interrog3, #interrog4, #interrog5, #interrog6, #interrog7{
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    margin-left: 20px;
+}
+#interrog img, #interrog2 img, #interrog3 img, #interrog4 img, #interrog5 img, #interrog6 img, #interrog7 img {
+    width: 50px;
+    height: auto;
+}
+#interrog:hover, #interrog2:hover, #interrog3:hover, #interrog4:hover, #interrog5:hover, #interrog6:hover, #interrog7:hover {
+    background-color: #b30000bb;
+    border-radius: 50%;
+}
+.oculto {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 682px;
+    height: 795px; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding-top: 5px;
+}
+#botãoFechar, #botãoFechar2, #botãoFechar3, #botãoFechar4, #botãoFechar5, #botãoFechar6, #botãoFechar7 {
+    color: #353535;
+    float: inline-end;
+    font-size: 58px;
+    font-weight: bold;
+}
+#botãoFechar:hover, #botãoFechar2:hover, #botãoFechar3:hover, #botãoFechar4:hover, #botãoFechar5:hover, #botãoFechar6:hover, #botãoFechar7:hover {
+    color: #b30000;
 }
 h4{
     line-height: 20px;
@@ -58,6 +98,7 @@ h4{
     line-height: 6pt;
     padding-bottom: 5px;
     padding-left: 20px;
+    
 }
 
 #f12{
@@ -110,4 +151,3 @@ h4{
     left: -10px;
     top: -5px;
 }
-
